@@ -1,7 +1,7 @@
 
 
 resource "azurerm_resource_group" "personal_site" {
-  name     = "${var.project_name}-rg"
+  name     = "${var.project_name}-app-rg"
   location = var.location
 }
 
