@@ -4,101 +4,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      min-height: 100vh;
-      background: #1a1a18;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Courier New', monospace;
-      overflow: hidden;
-    }
-
-    .tape {
-      position: fixed;
-      width: 120%;
-      padding: 14px 0;
-      background: #f5c800;
-      color: #1a1a18;
-      font-weight: bold;
-      font-size: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      white-space: nowrap;
-      z-index: 10;
-    }
-
-    .tape-top {
-      top: 40px;
-      transform: rotate(-2deg);
-    }
-
-    .tape-bottom {
-      bottom: 40px;
-      transform: rotate(2deg);
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 24px;
-      z-index: 5;
-      padding: 40px;
-    }
-
-    .gif-container {
-      width: 180px;
-      height: 180px;
-    }
-
-    .gif-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    h1 {
-      font-size: 48px;
-      font-weight: bold;
-      color: #f5c800;
-      letter-spacing: -0.02em;
-    }
-
-    p {
-      font-size: 16px;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="card">
+    <p class="label">About</p>
+    <h1>William Wood</h1>
+    <p class="tagline">Your title or short descriptor goes here</p>
 
-  <div class="tape tape-top">
-    🚧 UNDER CONSTRUCTION 🚧 &nbsp;&nbsp;&nbsp; 🚧 UNDER CONSTRUCTION 🚧 &nbsp;&nbsp;&nbsp; 🚧 UNDER CONSTRUCTION 🚧
-  </div>
+    <p class="bio">
+      A short paragraph about yourself — your background, what you do,
+      what you care about, or what you're currently working on. Keep it
+      genuine and personal.
+    </p>
 
-  <div class="content">
-    <div class="gif-container">
-      <!-- Replace this src with any construction gif you like from giphy.com -->
-      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXp3aGFzdTdpaG5kZmc5aW9iZWg5aWh3MXR6bWVuMm14aWRqN256ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cfGmVRsJI6wq6noGxP/giphy.gif" alt="Under construction" />
+    <hr class="divider"/>
+
+    <p class="links-label">Links</p>
+    <div class="links">
+
+      <!-- ✏️ Replace href="#" with your actual URL for each link -->
+
+      <a href="#" class="link-item">
+        <span class="link-icon">🌐</span>
+        <span class="link-text">Website</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+      <a href="#" class="link-item">
+        <span class="link-icon">𝕏</span>
+        <span class="link-text">Twitter / X</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+      <a href="#" class="link-item">
+        <span class="link-icon">💼</span>
+        <span class="link-text">LinkedIn</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+      <a href="#" class="link-item">
+        <span class="link-icon">🐙</span>
+        <span class="link-text">GitHub</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+      <a href="#" class="link-item">
+        <span class="link-icon">✉️</span>
+        <span class="link-text">Email me</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
     </div>
-    <h1>Coming Soon</h1>
-    <p>My portfolio is under construction</p>
   </div>
-
-  <div class="tape tape-bottom">
-    🚧 UNDER CONSTRUCTION 🚧 &nbsp;&nbsp;&nbsp; 🚧 UNDER CONSTRUCTION 🚧 &nbsp;&nbsp;&nbsp; 🚧 UNDER CONSTRUCTION 🚧
-  </div>
-
 </body>
 </html>
