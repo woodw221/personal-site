@@ -23,6 +23,25 @@ body {
   overflow-x: hidden;
 }
 
+li#banner{
+  display: inline
+}
+
+div#banner { 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  background-color: #2a2a2a; 
+  width: 100%; 
+}
+
+div#banner-content {
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  border: 1px solid #000;
+}
+
 /* subtle grain overlay */
 body::before {
   content: '';
