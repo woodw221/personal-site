@@ -10,40 +10,59 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   <nav>
-    <span class="nav-link active" onclick="showPage('index.html', this)">Home</span>
-    <span class="nav-link" onclick="showPage('test.html', this)">Test Page</span>
+
+  <nav>
+    <span class="nav-link active" onclick="showPage('home', this)">Home</span>
+    <span class="nav-link" onclick="showPage('test', this)">Test Page</span>
   </nav>
-  <div class="card">
-    <p class="label">About</p>
-    <h1>William Wood</h1>
-    <p class="tagline">IT Infrastructure Specialist II</p>
 
-    <p class="bio">
-      I’m an IT Infrastructure Specialist who enjoys turning complex systems into reliable, efficient platforms that teams can depend on. Currently at Alliant Energy, I’ve led large-scale virtualization migrations—including a multimillion-dollar transition to Nutanix AHV—while building automation tools, improving patch compliance, and helping teams adopt new technologies with confidence. I’m passionate about mentoring others, simplifying processes through scripting and automation, and designing infrastructure that balances performance, security, and cost.
-      <br>
-      <br>
-      My background spans energy, healthcare, and retail environments, where I’ve supported mission-critical systems, strengthened cybersecurity practices aligned with NERC CIP and NIST frameworks, and helped organizations navigate everything from ransomware recovery to enterprise-wide upgrades. I’m always looking for smarter, more scalable ways to build and support modern infrastructure.
-    </p>
+  <div id="home" class="page active">
+    <div class="card">
+      <p class="label">About</p>
+      <h1>William Wood</h1>
+      <p class="tagline">IT Infrastructure Specialist II</p>
 
-    <hr class="divider"/>
+      <p class="bio">
+        I'm an IT Infrastructure Specialist who enjoys turning complex systems into reliable, efficient platforms that teams can depend on. Currently at Alliant Energy, I've led large-scale virtualization migrations—including a multimillion-dollar transition to Nutanix AHV—while building automation tools, improving patch compliance, and helping teams adopt new technologies with confidence. I'm passionate about mentoring others, simplifying processes through scripting and automation, and designing infrastructure that balances performance, security, and cost.
+        <br><br>
+        My background spans energy, healthcare, and retail environments, where I've supported mission-critical systems, strengthened cybersecurity practices aligned with NERC CIP and NIST frameworks, and helped organizations navigate everything from ransomware recovery to enterprise-wide upgrades. I'm always looking for smarter, more scalable ways to build and support modern infrastructure.
+      </p>
 
-    <p class="links-label">Links</p>
-    <div class="links">
+      <hr class="divider"/>
 
-      <a href="https://www.linkedin.com/in/william-wood-92727151/" target="_blank" class="link-item">
-        <span class="link-icon">💼</span>
-        <span class="link-text">LinkedIn</span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a href="https://github.com/woodw221" target="_blank" class="link-item">
-        <span class="link-icon">🐙</span>
-        <span class="link-text">GitHub</span>
-        <span class="link-arrow">↗</span>
-      </a>
-
+      <p class="links-label">Links</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/william-wood-92727151/" target="_blank" class="link-item">
+          <span class="link-icon">💼</span>
+          <span class="link-text">LinkedIn</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/woodw221" target="_blank" class="link-item">
+          <span class="link-icon">🐙</span>
+          <span class="link-text">GitHub</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
     </div>
   </div>
+
+  <div id="test" class="page">
+    <div class="card">
+      <p class="label">Test</p>
+      <h1>Test Page</h1>
+      <p class="tagline">Work in progress.</p>
+      <p class="bio">This is your test page. Replace this content with whatever you need.</p>
+    </div>
+  </div>
+
+  <script>
+    function showPage(pageId, clicked) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      clicked.classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
