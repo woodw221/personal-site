@@ -13,9 +13,10 @@
 
   <nav>
     <span class="nav-link active" onclick="showPage('home', this)">Home</span>
-    <span class="nav-link" onclick="showPage('test', this)">Test Page</span>
+    <span class="nav-link" onclick="showPage('resume', this)">Resume</span>
   </nav>
 
+  <!-- HOME PAGE -->
   <div id="home" class="page active">
     <div class="card">
       <p class="label">About</p>
@@ -46,12 +47,122 @@
     </div>
   </div>
 
-  <div id="test" class="page">
-    <div class="card">
-      <p class="label">Test</p>
-      <h1>Test Page</h1>
-      <p class="tagline">Work in progress.</p>
-      <p class="bio">This is your test page. Replace this content with whatever you need.</p>
+  <!-- RESUME PAGE -->
+  <div id="resume" class="page">
+    <div class="resume-card">
+
+      <div class="resume-header">
+        <h1>William Wood</h1>
+        <div class="resume-contact">
+          <span>woodw221@gmail.com</span>
+          <span>619-315-8649</span>
+          <span>Edgerton, WI</span>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="resume-section">
+        <p class="resume-section-title">Work Experience</p>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">IT Infrastructure Specialist II</span>
+            <span class="job-date">July 2025 – Present</span>
+          </div>
+          <p class="job-company">Alliant Energy — Madison, WI</p>
+          <ul class="job-bullets">
+            <li>Provided mentorship and training to junior staff, enabling effective delegation of routine tasks and supporting team development.</li>
+            <li>Designed and led the migration of the company's vCenter infrastructure from ESXi to Nutanix Acropolis Hypervisor, saving over $4 million in licensing.</li>
+            <li>Led cross-team training sessions and developed comprehensive documentation to enable rapid adoption of Prism Central.</li>
+            <li>Built and maintained compliance reporting for host-patching and improved overall compliance by executing timely patches.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">IT Infrastructure Specialist I</span>
+            <span class="job-date">Jan 2024 – July 2025</span>
+          </div>
+          <p class="job-company">Alliant Energy — Madison, WI</p>
+          <ul class="job-bullets">
+            <li>Led the successful migration of the company's vCenter infrastructure from version 6 to version 7.</li>
+            <li>Developed a vCenter and Nutanix REST API-based script to automate VM protection, schedule snapshots, and implement auto-snapshot functionality.</li>
+            <li>Provided sizing recommendations for a Production Server Infrastructure Lifecycle project considering current and projected workload demands.</li>
+            <li>Created and maintained technical documentation related to hardware/software in client computing environments as well as training materials for end users.</li>
+            <li>Identified, planned, and implemented system process improvements and efficiencies.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">System Administrator</span>
+            <span class="job-date">March 2022 – Nov 2023</span>
+          </div>
+          <p class="job-company">Solv Energy — San Diego, CA</p>
+          <ul class="job-bullets">
+            <li>Proficient with NERC CIP and NIST Cyber Security frameworks and demonstrated proficiency in TrendMicro, Microsoft ATP, and Incident Response.</li>
+            <li>Monitored server performance and performed server maintenance, patching, and troubleshooting using SCCM and Bigfix.</li>
+            <li>Experienced with Microsoft Infrastructure Technologies including Active Directory, LDAP, DNS, DHCP, GPOs, IIS, and PKI.</li>
+            <li>Conducted quarterly audits on access management for Active Directory and Perimeter Access Control systems.</li>
+            <li>Designed, implemented, and supported server infrastructure including physical servers, virtual servers, and virtualization technologies for Windows and Linux.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">System Technician</span>
+            <span class="job-date">Aug 2021 – March 2022</span>
+          </div>
+          <p class="job-company">Road Runner Sports — San Diego, CA</p>
+          <ul class="job-bullets">
+            <li>Managed system administration and configuration of MS Exchange, Windows 7/10, Mac OSX, iOS, networked printer systems, and third-party software.</li>
+            <li>Monitored, investigated, resolved, and followed-up on IT tickets related to personal computers, servers, and various applications.</li>
+            <li>Oversaw purchase order justifications, user training, internal presentations, and upper management interactions.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">IT Help Desk Technician</span>
+            <span class="job-date">Mar 2020 – Aug 2021</span>
+          </div>
+          <p class="job-company">Advanced Diabetes Supply — San Diego, CA</p>
+          <ul class="job-bullets">
+            <li>Enabled expansion of the telecommuting workforce by provisioning custom All-in-One computer systems.</li>
+            <li>Restored company network during outage caused by a company-wide ransomware attack.</li>
+            <li>Administered Windows User Accounts including Exchange Mailboxes.</li>
+            <li>Experienced working in a Healthcare environment with HIPAA regulations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-section">
+        <p class="resume-section-title">Skills</p>
+        <div class="skills-grid">
+          <div class="skill-row"><strong>Languages</strong><br>Bash, C, C++, Java, Python, PowerShell, Lua, Assembly, SQL</div>
+          <div class="skill-row"><strong>Tools</strong><br>Git, GNU Coreutils, GCC, Make, GDB, SSH, FTP, Docker, Atlassian Suite, Microsoft Exchange, Active Directory, Nutanix, SCCM, Bigfix, Splunk</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="resume-section">
+        <p class="resume-section-title">Certifications</p>
+        <div class="cert-item">
+          <span class="cert-name">AZ-900: Azure Fundamentals</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section">
+        <p class="resume-section-title">Education</p>
+        <div class="edu-item">
+          <span class="edu-degree">Bachelor of Science — Computer Science</span><br>
+          San Diego State University — San Diego, CA<br>
+          <span class="edu-date">August 2013 – May 2019 &nbsp;|&nbsp; Conferred Feb 2026</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
