@@ -23,25 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-li#banner{
-  display: inline
-}
-
-div#banner { 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  background-color: #2a2a2a; 
-  width: 100%; 
-}
-
-div#banner-content {
-  width: 100%;
-  text-align: right;
-  padding-right: 10px;
-  border: 1px solid #000;
-}
-
 /* subtle grain overlay */
 body::before {
   content: '';
@@ -51,6 +32,57 @@ body::before {
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
+}
+
+   /* NAV BANNER */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  padding: 0 1.5rem;
+  height: 48px;
+}
+
+    /* corner accent on nav */
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.nav-link {
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.35rem 0.85rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.nav-link.active {
+  color: var(--accent);
+  border-color: var(--border);
+  background: #c9a96e0d;
 }
 
 .card {
